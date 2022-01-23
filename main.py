@@ -14,7 +14,7 @@ font_but = tkinter.font.Font(family="Segoe UI ", size=15)
 root.title("Calculator")
 
 root.config(bg=gray_layout)
-root.geometry("300x350")
+root.geometry("300x350") #initial resolution 
 
 e = Entry(root, width=0,  fg="white", bg=gray_layout,
           font=font_disp)
@@ -85,7 +85,7 @@ def button_division():
     f_num = int(first_number)
     e.delete(0, END)
 
-# define buttons 1 , 9 to
+# define buttons 1 , 9  and their logic
 
 
 size_numberbuttons = 9
@@ -168,6 +168,7 @@ button_multiply.grid(row=3, column=3,
                      padx=separatenum, pady=serparatenum1, sticky="NSEW")
 button_add1.grid(row=5, column=3,
                  padx=separatenum, pady=serparatenum1, sticky="NSEW")
+#font used on each button var on line 12
 button_1['font'] = font_but
 button_2['font'] = font_but
 button_3['font'] = font_but
